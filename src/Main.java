@@ -15,13 +15,18 @@ public class Main {
             System.out.println("\n Match" + round);
             System.out.println("lets play");
             int user_choice = sc.nextInt();
+            if (user_choice<1||user_choice>3){
+                System.out.println("You can only choose 1,2 and 3");
+                System.out.println("1 for rock" + " " + "2 for scissors" + " " + "3 for paper");
+                System.out.println("Choose again");
+                user_choice=sc.nextInt();
+            }
             int computer_choice = rr.nextInt(1, 4);
             System.out.println("your choice is " + user_choice);
             System.out.println("computer choice is " + computer_choice);
             if (user_choice==computer_choice){
                 System.out.println("it is draw");
             }
-
             else if ((user_choice==1&&computer_choice==2)||(user_choice==2&&computer_choice==3)||(user_choice==3&&
                     computer_choice==1)){
                 System.out.println("you won the match");
@@ -38,18 +43,12 @@ public class Main {
         System.out.println("computer score is :" + computer_score);
         if (user_score == computer_score) {
             System.out.println("It is draw");
-
         }
         System.out.println();
-
         if (user_score > computer_score) {
             System.out.println("you won the match ");
         }
-        else if (user_score==computer_score) {
-            System.out.println("the match is draw!please try again");
-
-        }
-        else {
+        else if (user_score<computer_score){
             System.out.println("computer won the match");
             System.out.println("Better! luck next time ");
         }
