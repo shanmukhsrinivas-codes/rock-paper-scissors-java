@@ -11,7 +11,7 @@ public class Main {
         int computer_score = 0;
         System.out.println("welcome to the rocks,papers and scissors");
         System.out.println("1 for rock" + " " + "2 for scissors" + " " + "3 for paper");
-        for (int round = 1; round <= 5; round++) {
+        for (int round = 1; round <= 5; round++){
             System.out.println("\n Match" + round);
             System.out.println("lets play");
             int user_choice = sc.nextInt();
@@ -39,8 +39,8 @@ public class Main {
 
         }
         System.out.println();
-        System.out.println("your score is :" + user_score);
-        System.out.println("computer score is :" + computer_score);
+        System.out.println("Your score is: "+user_score);
+        System.out.println("Computer score is: "+computer_score);
         if (user_score == computer_score) {
             System.out.println("The match is Draw ");
         }
