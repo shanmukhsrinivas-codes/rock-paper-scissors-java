@@ -42,7 +42,7 @@ public class Main {
         System.out.println("your score is :" + user_score);
         System.out.println("computer score is :" + computer_score);
         if (user_score == computer_score) {
-            System.out.println("It is draw");
+            System.out.println("The match is Draw ");
         }
         System.out.println();
         if (user_score > computer_score) {
